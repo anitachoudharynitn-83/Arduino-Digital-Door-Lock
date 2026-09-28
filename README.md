@@ -83,9 +83,13 @@ allowing external monitoring and debugging.
 
 ## 🚧 Challenges Faced
 
-- Timing control without blocking execution  
-- Handling incorrect password attempts  
-- Managing multiple peripherals simultaneously  
+- Managing timing between multiple hardware peripherals.
+
+-Interfacing the keypad, display, servo, and buzzer simultaneously.
+
+-Implementing password verification and incorrect-attempt handling.
+
+-Maintaining reliable communication between Arduino and MATLAB.
 
 ---
 
@@ -102,15 +106,17 @@ allowing external monitoring and debugging.
 ## 📂 Repository Structure
 
 ```text
-DigiLock-v1.0/
+Arduino-Digital-Door-Lock/
+│
+├── DigiLock.ino
+├── serial_reader.m
 ├── README.md
-├── code/
-│   └── DigiLock.ino
-├── matlab/
-│   └── serial_reader.m
-└── images/
-    ├── wiring.png
-    └── setup.png
+│
+├── wiring.png
+├── setup.png
+├── img-1.jpeg
+├── img_2.jpeg
+└── vid-1.mp4
 ```
 
 
